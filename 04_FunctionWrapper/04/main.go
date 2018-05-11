@@ -13,7 +13,9 @@ func wrapper() func() int {
 }
 
 func main() {
+	// calling the wrapper function and assiging the function to a variable increment
 	increment := wrapper()
+	// calling the increment function twice
 	fmt.Println(increment())
 	fmt.Println(increment())
 }
