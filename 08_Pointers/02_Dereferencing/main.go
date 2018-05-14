@@ -15,6 +15,6 @@ func main() {
 	// printing the value of b - memory address of a
 	fmt.Println(b)
 
-	// printing the value of memory address of b
+	// printing the value of memory address of b - dereferencing the address
 	fmt.Println(*b)
 }
