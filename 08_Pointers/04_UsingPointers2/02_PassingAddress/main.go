@@ -15,5 +15,5 @@ func main() {
 func change(a *int) {
 	// changing the address pointer data type to a new value
 	*a = 50
-	fmt.Println(&a)
+	fmt.Println(a)
 }
