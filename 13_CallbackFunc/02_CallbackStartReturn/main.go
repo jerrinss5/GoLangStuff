@@ -15,3 +15,5 @@ func visit(numbers []int, callback func(int) int) {
 		fmt.Println(callback(n))
 	}
 }
+
+// it is called callback because it is calling the function which passes the agrument
