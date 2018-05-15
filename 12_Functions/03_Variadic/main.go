@@ -10,7 +10,7 @@ func main() {
 
 // array value of numbers are accepted as parameters
 func average(values ...float64) float64 {
-	total := 0.0
+	var total float64
 
 	for _, v := range values {
 		total += v
