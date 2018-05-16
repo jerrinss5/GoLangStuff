@@ -15,3 +15,5 @@ func main() {
 	defer world()
 	hello()
 }
+
+// defere us usually used to close files or other resources, but in code placed just after opening them and then defering to till the end
