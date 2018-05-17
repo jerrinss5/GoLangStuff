@@ -16,7 +16,7 @@ func main() {
 	var myMap1 map[string]string
 	fmt.Println(myMap1 == nil)
 
-	// with composite
+	// with composite literal
 	var myMap2 = map[string]string{}
 	fmt.Println(myMap2 == nil)
 }
