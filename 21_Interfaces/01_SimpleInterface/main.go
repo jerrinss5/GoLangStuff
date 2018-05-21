@@ -23,5 +23,7 @@ func info(sh Shape) {
 
 func main() {
 	s := Square{10}
+	// passing the square variable - since the square implements area
+	// info accepts the square variable
 	info(s)
 }
