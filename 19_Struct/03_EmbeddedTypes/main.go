@@ -11,7 +11,7 @@ type Person struct {
 
 // DoubleZero : structure which stores an agent information with kill contract
 type DoubleZero struct {
-	// here person is the anonymous field
+	// here person is the anonymous field - embedded
 	Person
 	LicenseToKill bool
 }
