@@ -6,7 +6,7 @@ import (
 
 func main() {
 	// passing the value whose factorial needs to be calculated
-	c1 := factorial(4)
+	c1 := factorial(20)
 	// getting the channel for the factorial function to factorial calculator
 	c2 := factorialCalc(c1)
 	fmt.Println("Value of factorial is:", <-c2)
