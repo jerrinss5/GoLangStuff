@@ -7,8 +7,8 @@ type person struct {
 	lname string
 }
 
-func (p person) pSpeak() {
-	fmt.Println(p.fname, p.lname, "here!")
+func (p person) speak() string {
+	return fmt.Sprintln(p.fname, p.lname, "here!")
 }
 
 type secretAgent struct {
@@ -16,8 +16,16 @@ type secretAgent struct {
 	licenseToKill bool
 }
 
-func (sa secretAgent) saSpeak() {
-	fmt.Println(sa.p.fname, sa.p.lname, "at your service!")
+func (sa secretAgent) speak() string {
+	return fmt.Sprintln(sa.p.fname, sa.p.lname, "at your service!")
+}
+
+type agent interface {
+	speak() string
+}
+
+func speaking(a agent) {
+	fmt.Println(a.speak())
 }
 
 func main() {
@@ -32,8 +40,6 @@ func main() {
 		},
 		licenseToKill: true,
 	}
-
-	p.pSpeak()
-	sa.saSpeak()
-	sa.p.pSpeak()
+	speaking(p)
+	speaking(sa)
 }
